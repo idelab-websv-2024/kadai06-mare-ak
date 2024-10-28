@@ -5,23 +5,25 @@
   </head>
   <script  src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   <script>
-function showNasa()
+function showName()
 {
+  var name = document.getElementById('serchName').value;
+  name.name = ("nasa");
   twttr.widgets.createTimeline(
       {
         sourceType: "profile",
         screenName: "nasa"
       },
-      document.getElementById("nasaSpace")
+      document.getElementById("nameSpace")
   );
 }
   </script>
 
   <body>
+<input type="text" id="serchName" />
+<button type="button" onclick='showName()'>serch</button>
 
-<button type="button" name="NASA" onclick='showNasa()'>NASA</button>
-
-<div id='nasaSpace'></div>
+<div id='nameSpace'></div>
 
   </body>
 </html>
