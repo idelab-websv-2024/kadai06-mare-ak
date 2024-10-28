@@ -8,7 +8,6 @@
 function showName()
 {
   var name = document.getElementById('serchName').value;
-  name.name = ("nasa");
   twttr.widgets.createTimeline(
       {
         sourceType: "profile",
@@ -20,8 +19,8 @@ function showName()
   </script>
 
   <body>
-<input type="text" id="serchName" />
-<button type="button" onclick='showName()'>serch</button>
+<input type="text" name="serch" id="serchName" />
+<button type="button" id="serchName" onclick='showName()'>serch</button>
 
 <div id='nameSpace'></div>
 
