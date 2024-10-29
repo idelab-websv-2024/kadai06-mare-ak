@@ -7,11 +7,12 @@
   <script>
 function showName()
 {
-  var name = document.getElementById('serchName').value;
+  var username = document.getElementById('serchName').value;
   twttr.widgets.createTimeline(
       {
         sourceType: "profile",
-        screenName: "nasa"
+        //Nameでユーザーの名前の指定されている
+        screenName: username
       },
       document.getElementById("nameSpace")
   );
